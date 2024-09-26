@@ -15,7 +15,7 @@ public class Engine {
     return maxFuelLevel;
    }
    //Current fuel level accessor
-   public double getcurentFuelLevel(){
+   public double getcurrentFuelLevel(){
     return currentFuelLevel;
    }
    //Fuel type accessor
@@ -42,6 +42,7 @@ public class Engine {
    public static void main(String[] args) {
     Engine myEngine = new Engine(FuelType.ELECTRIC, 100.0);
     myEngine.go();
+    myEngine.getcurrentFuelLevel();
     // while (myEngine.go()) {
     //     System.out.println("Choo choo!");
     // }
