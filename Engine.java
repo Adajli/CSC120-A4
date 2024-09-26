@@ -9,7 +9,7 @@ public class Engine {
     f = fuelType;
     this.maxFuelLevel = maxFuelLevel; 
    }
-   
+
    //Max fuel level accessor
    public double getmaxFuelLevel(){
     return maxFuelLevel;
@@ -19,6 +19,9 @@ public class Engine {
     return currentFuelLevel;
    }
    //Fuel type accessor
+   public FuelType getFuelType(){
+    return f;
+   }
    // Refuel method to refuel engine
    public void refuel(){
     currentFuelLevel = maxFuelLevel;
