@@ -5,4 +5,5 @@ public class Passenger {
     public Passenger(String name) {
         this.name = name;
     }
+    
 }
