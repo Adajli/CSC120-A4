@@ -1,6 +1,6 @@
 public class Engine {
    //Attributes
-   FuelType f;
+   private FuelType f;
    private double currentFuelLevel;
    private double maxFuelLevel;
 
@@ -42,7 +42,7 @@ public class Engine {
    public static void main(String[] args) {
     Engine myEngine = new Engine(FuelType.ELECTRIC, 100.0);
     myEngine.go();
-    myEngine.getcurrentFuelLevel();
+    myEngine.getmaxFuelLevel();
     // while (myEngine.go()) {
     //     System.out.println("Choo choo!");
     // }
