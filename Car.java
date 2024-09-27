@@ -17,4 +17,38 @@ public class Car {
     public int seatsRemaining(){
         return maxCapacity-passengersOnboard.size();
     }
+
+    //Method to add a passenger
+    public boolean addPassenger(Passenger p){
+        if(passengersOnboard.size()<maxCapacity){
+            passengersOnboard.add(p);
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    //Method to remove the passenger 
+    public boolean removePassenger(Passenger p){
+        if(passengersOnboard.size()>0){
+            for(int i = 0; i<passengersOnboard.size(); i++){
+                if(passengersOnboard.get(i).equals(p)){
+                    passengersOnboard.remove(p);
+                    return true;
+                }else{
+                    return false;
+                }     
+            }
+        }else{
+            return false;
+        }
+    }
+
+    public void printManifest(){
+        if(passengersOnboard.size()==0){
+            System.out.println();
+        }else{
+            System.out.println(passengersOnboard.toString());
+        }
+    }
 }
