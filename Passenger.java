@@ -7,19 +7,17 @@ public class Passenger {
     }
     //boardCar function
     public void boardCar(Car c){
-        c.addPassenger(this);
         if(c.addPassenger(this)){
-            System.out.println("The passenrger" + name +" already boarded");
+            System.out.println("The passenrger already boarded");
         }else{
             System.out.println("The car is already full");
         }
     }
     public void getoff(Car c){
-        c.addPassenger(this);
         if(c.addPassenger(this)){
-            System.out.println("The passenrger" + name +" already boarded");
+            System.out.println("The passenger is already removed");
         }else{
-            System.out.println("The car is already full");
+            System.out.println("The pasenger is not on board");
         }
     }
     
