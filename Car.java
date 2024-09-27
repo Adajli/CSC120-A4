@@ -41,12 +41,14 @@ public class Car {
         }
         return removed;
     }
-
+    //Manifest function
     public void printManifest(){
         if(passengersOnboard.size()==0){
             System.out.println();
         }else{
-            System.out.println(passengersOnboard.toString());
+            for(int i = 0; i<passengersOnboard.size(); i++){
+                System.out.println(passengersOnboard.get(i).toString());           
+            }
         }
     }
 }
