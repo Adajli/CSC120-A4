@@ -30,18 +30,16 @@ public class Car {
 
     //Method to remove the passenger 
     public boolean removePassenger(Passenger p){
+        boolean removed = false;
         if(passengersOnboard.size()>0){
             for(int i = 0; i<passengersOnboard.size(); i++){
                 if(passengersOnboard.get(i).equals(p)){
                     passengersOnboard.remove(p);
-                    return true;
-                }else{
-                    return false;
-                }     
+                    removed = true;
+                }  
             }
-        }else{
-            return false;
         }
+        return removed;
     }
 
     public void printManifest(){
