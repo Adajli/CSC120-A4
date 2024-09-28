@@ -22,7 +22,7 @@ __**YES**___ 1 pt: The `Engine` class has `refuel()` and `go()` methods that cor
 
 ### Level 2 (3 pts)
 
-_____ 1 pt: The `Car` class contains appropriately-encapsulated attributes to store information about its capacity and current `Passenger`s
+__**YES**___ 1 pt: The `Car` class contains appropriately-encapsulated attributes to store information about its capacity and current `Passenger`s
 
 _____ 1 pt: The `Car` class has functional `addPassenger(...)` and `removePassenger(...)` methods
 

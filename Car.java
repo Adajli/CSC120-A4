@@ -26,7 +26,7 @@ public class Car {
 
     //Method to add a passenger
     public boolean addPassenger(Passenger p){
-        if(passengersOnboard.size()<maxCapacity){
+        if(passengersOnboard.size()<maxCapacity && !p.equals(null)){
             passengersOnboard.add(p);
             return true;
         }else{
