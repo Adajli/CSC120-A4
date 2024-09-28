@@ -60,5 +60,6 @@ public class Car {
     public static void main(String[] args) {
         ArrayList<Passenger> car = new ArrayList<Passenger>();
         Car c = new Car(car,10);
+        c.getCapacity();
     }
 }

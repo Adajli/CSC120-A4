@@ -23,8 +23,17 @@ public class Train {
         }
            
     }
+    //Accessor for engine
     public Engine getEngine(){
         return e;
+    }
+    //Accessor to get maximum capacity across all cars
+    public int getMaxCapacity(){
+        int maxCapacity = 0;
+        for(int i = 0; i<cars.size();i++){
+            maxCapacity += cars.get(i).getCapacity();
+        }
+        return maxCapacity;
     }
 
     public Car getCar(int i){
