@@ -30,11 +30,11 @@ _____ 1 pt: The `Car` class has a `printManifest()` method that prints a nicely-
 
 ### Level 3 (3 pts)
 
-_____ 1 pt: The `Passenger` class uses appropriate methods from the `Car` class to implement its `boardCar(...)` and `getOffCar(...)` methods
+__**PART**___ 1 pt: The `Passenger` class uses appropriate methods from the `Car` class to implement its `boardCar(...)` and `getOffCar(...)` methods
 
-_____ 1 pt: The `Train` class has all expected attributes / relationships with the other classes
+__**YES**___ 1 pt: The `Train` class has all expected attributes / relationships with the other classes
 
-_____ 1 pt: The `Train` class has all expected methods, making use of methods from other classes as appropriate
+__**PART**___ 1 pt: The `Train` class has all expected methods, making use of methods from other classes as appropriate
 
 
 
