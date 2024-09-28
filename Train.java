@@ -27,13 +27,28 @@ public class Train {
     public Engine getEngine(){
         return e;
     }
+    //Accessor to get fuel type
+    public FuelType getFuelType(){
+        return fuelType;
+    }
+    
+    //Accessor to get fuel capacity
+    public double getCapacity(){
+        return fuelCapacity;
+    }
+
+    //Accessor to get the number of cars
+    public int getNumberOfCars(){
+        return nCars;
+    }
+
     //Accessor to get maximum capacity across all cars
     public int getMaxCapacity(){
-        int maxCapacity = 0;
+        passengerCapacity = 0;
         for(int i = 0; i<cars.size();i++){
-            maxCapacity += cars.get(i).getCapacity();
+            passengerCapacity += cars.get(i).getCapacity();
         }
-        return maxCapacity;
+        return passengerCapacity;
     }
 
      //Accessor to get number of open seats across all cars
