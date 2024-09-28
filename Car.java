@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 public class Car {
     //Attributes of car
     private ArrayList<Passenger> passengersOnboard;
@@ -9,9 +10,14 @@ public class Car {
         this.passengersOnboard = passengersOnboard;
         this.maxCapacity = maxCapacity;
     }
-    //Method returns maximum capacity of the car
+    //Method acceses maximum capacity of the car
     public int getCapacity(){
         return this.maxCapacity;
+    }
+
+     //Method acceses array of passengers onboard
+     public ArrayList<Passenger>  getPassengersOnboard(){
+        return this.passengersOnboard;
     }
     //Method returns seats remaining in the car
     public int seatsRemaining(){
