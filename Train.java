@@ -11,14 +11,14 @@ public class Train {
     private Car c;
     //Train constructor
     public Train(FuelType fuelType, double fuelCapacity, int nCars, int passengerCapacity){
-        this.fuelType = fuelType;
-        this.fuelCapacity = fuelCapacity;
+        fuelType = e.getFuelType();
+        fuelCapacity = e.getmaxFuelLevel();
         this.nCars = nCars;
         this.passengerCapacity = passengerCapacity;
         e = new Engine(fuelType, fuelCapacity);
         ArrayList<Car> cars = new ArrayList<Car>();
         for(int i = 0; i<=nCars;i++){
-            c = new Car(c.getPassengersOnboard(), passengerCapacity);
+            c = new Car(c.getPassengersOnboard(), c.getCapacity());
             cars.add(c);
         }
            
@@ -36,6 +36,16 @@ public class Train {
         return maxCapacity;
     }
 
+     //Accessor to get number of open seats across all cars
+     public int seatsRemaining(){
+        int seatsRemaining = 0;
+        for(int i = 0; i<cars.size();i++){
+            seatsRemaining += cars.get(i).seatsRemaining();
+        }
+        return seatsRemaining;
+    }
+
+    //Accesor to get a car of the train
     public Car getCar(int i){
         return cars.get(i);
     }
