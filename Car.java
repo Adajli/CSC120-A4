@@ -10,12 +10,12 @@ public class Car {
         this.passengersOnboard = passengersOnboard;
         this.maxCapacity = maxCapacity;
     }
-    //Method acceses maximum capacity of the car
+    //Method acesses maximum capacity of the car
     public int getCapacity(){
         return this.maxCapacity;
     }
 
-     //Method acceses array of passengers onboard
+     //Method acesses array of passengers onboard
      public ArrayList<Passenger>  getPassengersOnboard(){
         return this.passengersOnboard;
     }
@@ -56,5 +56,9 @@ public class Car {
                 System.out.println(passengersOnboard.get(i).toString());           
             }
         }
+    }
+    public static void main(String[] args) {
+        ArrayList<Passenger> car = new ArrayList<Passenger>();
+        Car c = new Car(car,10);
     }
 }
