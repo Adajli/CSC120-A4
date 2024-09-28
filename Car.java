@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.*;
 public class Car {
     //Attributes of car
     private ArrayList<Passenger> passengersOnboard;
@@ -62,6 +62,7 @@ public class Car {
         Car c = new Car(car,10);
         Passenger p = new Passenger("Melissa");
         c.addPassenger(p);
-        c.getCapacity();
+        c.getPassengersOnboard();
+        c.printManifest();
     }
 }
