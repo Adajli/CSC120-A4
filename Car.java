@@ -50,7 +50,7 @@ public class Car {
     //Manifest function
     public void printManifest(){
         if(passengersOnboard.size()==0){
-            System.out.println();
+            System.out.println("This car is empty.");
         }else{
             for(int i = 0; i<passengersOnboard.size(); i++){
                 System.out.println(passengersOnboard.get(i).toString());           

@@ -64,4 +64,11 @@ public class Train {
     public Car getCar(int i){
         return cars.get(i);
     }
+
+    //Manifest function
+    public void printManifest(){
+        for(int i = 0; i<cars.size();i++){
+            cars.get(i).printManifest();
+        }
+    }
 }
