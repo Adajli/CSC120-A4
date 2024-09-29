@@ -41,8 +41,6 @@ public class Car {
                 if(passengersOnboard.get(i).equals(p)){
                     passengersOnboard.remove(p);
                     removed = true;
-                }else{
-                    System.out.println("Can't remove passenger from train.");
                 }
             }
         }else{
@@ -68,8 +66,8 @@ public class Car {
         Passenger p2 = new Passenger("Jordan");
         System.out.println(p.getPassenger());
         c.addPassenger(p);
-        //c.addPassenger(p2);
-        c.removePassenger(p2);
+        c.addPassenger(p2);
+        //c.removePassenger(p2);
         c.printManifest();
     }
 }
