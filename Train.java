@@ -8,7 +8,6 @@ public class Train {
     private int passengerCapacity;
     private ArrayList<Car>cars;
     private Engine e;
-    private Car c;
     //Train constructor
     public Train(FuelType fuelType, double fuelCapacity, int nCars, int passengerCapacity){
         this.fuelType = fuelType;
@@ -46,7 +45,7 @@ public class Train {
     public int getMaxCapacity(){
         int maxCapacity = 0;
         for(int i = 0; i<cars.size();i++){
-            maxCapacity += cars.get(i).getCapacity();
+            maxCapacity += passengerCapacity;
         }
         return maxCapacity;
     }
