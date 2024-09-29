@@ -1,4 +1,6 @@
 Use this file to record your reflection on this assignment.
 
 - What are your initial impressions of how `Encapsulation` affects your programming?
+I initially thought that Encapsulation was really helpful enough to store information and makes the program run efficiently without having to show other classes the attributes.
 - What worked, what didn't, what advice would you give someone taking this course in the future?
+ What did not work in the first place was having to construct the cars of the train until I managed to get TA hours to fix the problem and revise my code. The go() function worked in the Engine class. I thought I did something wrong in not getting the fuel capacity and printing information of the Train and its features like fuel capacity, but it turned out I neede to use System.out.println() with the statements to make sure the code function. I would advise someone that when a feature is not printed, use System.out.println() and to not be afraid of trying the problems by themselves before getting help.
