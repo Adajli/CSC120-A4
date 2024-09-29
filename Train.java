@@ -77,6 +77,7 @@ public class Train {
         t.getCar(0).addPassenger(p);
         t.getCar(0).addPassenger(p2);
         t.getCar(0).printManifest();
+        System.out.println(t.getMaxCapacity());
         System.out.println(t.getCar(0).getCapacity());
         System.out.println(t.getNumberOfCars());
         System.out.println(t.seatsRemaining());
