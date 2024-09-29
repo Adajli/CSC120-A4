@@ -17,7 +17,7 @@ public class Passenger {
             System.out.println("The car is already full.");
         }
     }
-    public void getoff(Car c){
+    public void getOff(Car c){
         if(c.addPassenger(this)){
             System.out.println( getPassenger()+ "is off the train.");
         }else{
@@ -32,5 +32,6 @@ public class Passenger {
         System.out.println(p.getPassenger());
         Car c = new Car(10);
         p.boardCar(c);
+        p.getOff(c);
     }
 }
