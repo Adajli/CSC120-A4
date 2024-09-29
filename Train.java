@@ -72,6 +72,7 @@ public class Train {
     //Manifest function
     public void printManifest(){
         for(int i = 0; i<nCars;i++){
+            System.out.println("Car " + (i+1));
             cars.get(i).printManifest();
         }
     }
