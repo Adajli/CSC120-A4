@@ -32,8 +32,13 @@ public class Train {
     }
     
     //Accessor to get fuel capacity
-    public double getCapacity(){
+    public double getFuelCapacity(){
         return fuelCapacity;
+    }
+
+    //Accessor to get passenger capacity
+    public double getPassengerCapacity(){
+        return passengerCapacity;
     }
 
     //Accessor to get the number of cars
