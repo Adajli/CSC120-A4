@@ -43,6 +43,8 @@ public class Car {
                     removed = true;
                 }  
             }
+        }else{
+            System.out.println("Can't remove passenger from train.");
         }
         return removed;
     }
@@ -61,8 +63,11 @@ public class Car {
     public static void main(String[] args) {
         Car c = new Car(10);
         Passenger p = new Passenger("Melissa");
+        Passenger p2 = new Passenger("Jordan");
         System.out.println(p.getPassenger());
         c.addPassenger(p);
+        //c.addPassenger(p2);
+        c.removePassenger(p2);
         c.printManifest();
     }
 }

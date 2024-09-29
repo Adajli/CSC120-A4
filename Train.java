@@ -18,7 +18,7 @@ public class Train {
         e = new Engine(fuelType, fuelCapacity);
         ArrayList<Car> cars = new ArrayList<Car>();
         for(int i = 0; i<=nCars;i++){
-            c = new Car(c.getCapacity());
+            Car c = new Car(passengerCapacity);
             cars.add(c);
         }
            
@@ -44,11 +44,11 @@ public class Train {
 
     //Accessor to get maximum capacity across all cars
     public int getMaxCapacity(){
-        passengerCapacity = 0;
+        int maxCapacity = 0;
         for(int i = 0; i<cars.size();i++){
-            passengerCapacity += cars.get(i).getCapacity();
+            maxCapacity += cars.get(i).getCapacity();
         }
-        return passengerCapacity;
+        return maxCapacity;
     }
 
      //Accessor to get number of open seats across all cars
