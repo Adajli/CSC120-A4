@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.*;
 public class Passenger {
     
     private String name;
@@ -32,8 +30,7 @@ public class Passenger {
     public static void main(String[] args) {
         Passenger p = new Passenger("Melissa");
         p.getPassenger();
-        ArrayList<Passenger> car = new ArrayList<Passenger>();
-        Car c = new Car(car,10);
+        Car c = new Car(10);
         p.boardCar(c);
     }
 }

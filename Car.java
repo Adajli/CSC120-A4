@@ -1,13 +1,13 @@
 import java.util.ArrayList;
-import java.util.*;
+
 public class Car {
     //Attributes of car
     private ArrayList<Passenger> passengersOnboard;
     private int maxCapacity;
 
     //Constructor
-    public Car(ArrayList<Passenger> passengersOnboard, int maxCapacity){
-        this.passengersOnboard = passengersOnboard;
+    public Car(int maxCapacity){
+        this.passengersOnboard = new ArrayList<Passenger>(maxCapacity);
         this.maxCapacity = maxCapacity;
     }
     //Method acesses maximum capacity of the car
@@ -60,8 +60,7 @@ public class Car {
     
     //Main function for testing
     public static void main(String[] args) {
-        ArrayList<Passenger> car = new ArrayList<Passenger>();
-        Car c = new Car(car,10);
+        Car c = new Car(10);
         Passenger p = new Passenger("Melissa");
         c.addPassenger(p);
         c.getPassengersOnboard();

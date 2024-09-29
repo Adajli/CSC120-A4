@@ -11,14 +11,14 @@ public class Train {
     private Car c;
     //Train constructor
     public Train(FuelType fuelType, double fuelCapacity, int nCars, int passengerCapacity){
-        fuelType = e.getFuelType();
-        fuelCapacity = e.getmaxFuelLevel();
+        this.fuelType = fuelType;
+        this.fuelCapacity = fuelCapacity;
         this.nCars = nCars;
         this.passengerCapacity = passengerCapacity;
         e = new Engine(fuelType, fuelCapacity);
         ArrayList<Car> cars = new ArrayList<Car>();
         for(int i = 0; i<=nCars;i++){
-            c = new Car(c.getPassengersOnboard(), c.getCapacity());
+            c = new Car(c.getCapacity());
             cars.add(c);
         }
            
@@ -70,5 +70,14 @@ public class Train {
         for(int i = 0; i<cars.size();i++){
             cars.get(i).printManifest();
         }
+    }
+    public static void main(String[] args) {
+        Passenger p = new Passenger("Melissa");
+        p.getPassenger();
+        Car c = new Car(10);
+        c.addPassenger(p);
+        Train t = new Train(FuelType.ELECTRIC,100.0,3,10 );
+        c.getCapacity();
+        t.getCar(1);
     }
 }
