@@ -19,9 +19,9 @@ public class Passenger {
     }
     public void getOff(Car c){
         if(c.addPassenger(this)){
-            System.out.println( getPassenger()+ "is off the train.");
+            System.out.println( getPassenger()+ " is off the train.");
         }else{
-            System.out.println( getPassenger() +"is not on board.");
+            System.out.println( getPassenger() +" is not on board.");
         }
     }
     
@@ -33,5 +33,8 @@ public class Passenger {
         Car c = new Car(10);
         p.boardCar(c);
         p.getOff(c);
+        Passenger p2 = new Passenger("Jordan");
+        p2.boardCar(c);
+
     }
 }
