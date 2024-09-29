@@ -24,9 +24,9 @@ __**YES**___ 1 pt: The `Engine` class has `refuel()` and `go()` methods that cor
 
 __**YES**___ 1 pt: The `Car` class contains appropriately-encapsulated attributes to store information about its capacity and current `Passenger`s
 
-__**PART**___ 1 pt: The `Car` class has functional `addPassenger(...)` and `removePassenger(...)` methods
+__**YES**___ 1 pt: The `Car` class has functional `addPassenger(...)` and `removePassenger(...)` methods
 
-__**PART**___ 1 pt: The `Car` class has a `printManifest()` method that prints a nicely-formatted roster of all `Passenger`s currently aboard the car
+__**YES**___ 1 pt: The `Car` class has a `printManifest()` method that prints a nicely-formatted roster of all `Passenger`s currently aboard the car
 
 ### Level 3 (3 pts)
 
