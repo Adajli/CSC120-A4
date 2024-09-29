@@ -61,7 +61,6 @@ public class Train {
 
     //Accesor to get a car of the train
     public Car getCar(int i){
-        System.out.println(cars.toString());
         return cars.get(i);
     }
 
@@ -75,12 +74,11 @@ public class Train {
         Train t = new Train(FuelType.ELECTRIC,100.0,3,10 );
         Passenger p = new Passenger("Melissa");
         t.getCar(1).addPassenger(p);
-        t.getCar(1).getPassengersOnboard();
+        t.getCar(1).printManifest();
         Car c = new Car(10);
         c.addPassenger(p);
-        System.out.println(c.getCapacity());
+        System.out.println(t.getCar(0).getCapacity());
         System.out.println(t.getNumberOfCars());
-        t.getCar(1);
         System.out.println(t.seatsRemaining());
         t.printManifest();
     }
