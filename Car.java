@@ -57,6 +57,8 @@ public class Car {
             }
         }
     }
+    
+    //Main function for testing
     public static void main(String[] args) {
         ArrayList<Passenger> car = new ArrayList<Passenger>();
         Car c = new Car(car,10);
