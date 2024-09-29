@@ -73,10 +73,10 @@ public class Train {
     public static void main(String[] args) {
         Train t = new Train(FuelType.ELECTRIC,100.0,3,10 );
         Passenger p = new Passenger("Melissa");
-        t.getCar(1).addPassenger(p);
-        t.getCar(1).printManifest();
-        Car c = new Car(10);
-        c.addPassenger(p);
+        Passenger p2 = new Passenger("Jordan");
+        t.getCar(0).addPassenger(p);
+        t.getCar(0).addPassenger(p2);
+        t.getCar(0).printManifest();
         System.out.println(t.getCar(0).getCapacity());
         System.out.println(t.getNumberOfCars());
         System.out.println(t.seatsRemaining());
