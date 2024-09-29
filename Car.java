@@ -67,7 +67,7 @@ public class Car {
         System.out.println(p.getPassenger());
         c.addPassenger(p);
         c.addPassenger(p2);
-        //c.removePassenger(p2);
+        c.removePassenger(p2);
         c.printManifest();
     }
 }
