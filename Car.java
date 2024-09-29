@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 public class Car {
     //Attributes of car
     private ArrayList<Passenger> passengersOnboard;
@@ -53,7 +52,7 @@ public class Car {
             System.out.println("This car is empty.");
         }else{
             for(int i = 0; i<passengersOnboard.size(); i++){
-                System.out.println(passengersOnboard.get(i).toString());           
+                System.out.println(passengersOnboard.get(i).getPassenger());           
             }
         }
     }
@@ -62,8 +61,8 @@ public class Car {
     public static void main(String[] args) {
         Car c = new Car(10);
         Passenger p = new Passenger("Melissa");
+        System.out.println(p.getPassenger());
         c.addPassenger(p);
-        c.getPassengersOnboard();
         c.printManifest();
     }
 }
