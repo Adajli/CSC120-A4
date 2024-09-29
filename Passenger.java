@@ -29,7 +29,7 @@ public class Passenger {
     //Main function for testing
     public static void main(String[] args) {
         Passenger p = new Passenger("Melissa");
-        p.getPassenger();
+        System.out.println(p.getPassenger());
         Car c = new Car(10);
         p.boardCar(c);
     }
