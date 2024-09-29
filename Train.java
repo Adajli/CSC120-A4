@@ -6,7 +6,7 @@ public class Train {
     private double fuelCapacity;
     private int nCars;
     private int passengerCapacity;
-    private ArrayList<Car>cars;
+    private ArrayList<Car> cars;
     private Engine e;
     //Train constructor
     public Train(FuelType fuelType, double fuelCapacity, int nCars, int passengerCapacity){
@@ -15,13 +15,13 @@ public class Train {
         this.nCars = nCars;
         this.passengerCapacity = passengerCapacity;
         e = new Engine(fuelType, fuelCapacity);
-        ArrayList<Car> cars = new ArrayList<Car>();
-        for(int i = 0; i<=nCars;i++){
+        this.cars = new ArrayList<Car>();
+        for(int i = 0; i<nCars;i++){
             Car c = new Car(passengerCapacity);
-            cars.add(c);
+            this.cars.add(c);
         }
-           
     }
+
     //Accessor for engine
     public Engine getEngine(){
         return e;
@@ -53,7 +53,7 @@ public class Train {
      //Accessor to get number of open seats across all cars
      public int seatsRemaining(){
         int seatsRemaining = 0;
-        for(int i = 0; i<cars.size();i++){
+        for(int i = 0; i<nCars;i++){
             seatsRemaining += cars.get(i).seatsRemaining();
         }
         return seatsRemaining;
@@ -61,22 +61,27 @@ public class Train {
 
     //Accesor to get a car of the train
     public Car getCar(int i){
+        System.out.println(cars.toString());
         return cars.get(i);
     }
 
     //Manifest function
     public void printManifest(){
-        for(int i = 0; i<cars.size();i++){
+        for(int i = 0; i<nCars;i++){
             cars.get(i).printManifest();
         }
     }
     public static void main(String[] args) {
+        Train t = new Train(FuelType.ELECTRIC,100.0,3,10 );
         Passenger p = new Passenger("Melissa");
-        p.getPassenger();
+        t.getCar(1).addPassenger(p);
+        t.getCar(1).getPassengersOnboard();
         Car c = new Car(10);
         c.addPassenger(p);
-        Train t = new Train(FuelType.ELECTRIC,100.0,3,10 );
-        c.getCapacity();
+        System.out.println(c.getCapacity());
+        System.out.println(t.getNumberOfCars());
         t.getCar(1);
+        System.out.println(t.seatsRemaining());
+        t.printManifest();
     }
 }
