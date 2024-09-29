@@ -25,16 +25,16 @@ public class Engine {
    }
    // Refuel method to refuel engine
    public void refuel(){
-    this.currentFuelLevel = maxFuelLevel;
+    this.currentFuelLevel = this.maxFuelLevel;
+    // System.out.println(currentFuelLevel);
    }
    //Go function gets engine moving.
    public boolean go(){
     if(currentFuelLevel>0.0){
         System.out.println(currentFuelLevel);
-        this.currentFuelLevel -= 1.0;
+        this.currentFuelLevel -= 10;
         return true;
     }else{
-        System.out.println(currentFuelLevel);
         return false;
     }
     
@@ -49,6 +49,6 @@ public class Engine {
     }
     System.out.println("Out of fuel.");
     myEngine.refuel();
-    myEngine.getcurrentFuelLevel();
+    System.out.println(myEngine.getcurrentFuelLevel());
    }
 }
