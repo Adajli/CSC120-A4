@@ -30,19 +30,19 @@ __**YES**___ 1 pt: The `Car` class has a `printManifest()` method that prints a 
 
 ### Level 3 (3 pts)
 
-__**PART**___ 1 pt: The `Passenger` class uses appropriate methods from the `Car` class to implement its `boardCar(...)` and `getOffCar(...)` methods
+__**YES**___ 1 pt: The `Passenger` class uses appropriate methods from the `Car` class to implement its `boardCar(...)` and `getOffCar(...)` methods
 
 __**YES**___ 1 pt: The `Train` class has all expected attributes / relationships with the other classes
 
-__**PART**___ 1 pt: The `Train` class has all expected methods, making use of methods from other classes as appropriate
+__**YES**___ 1 pt: The `Train` class has all expected methods, making use of methods from other classes as appropriate
 
 
 
 ## General Items:
 
-__**PART**___ 4 pts: Programs compile without errors or warnings
+__**YES**___ 4 pts: Programs compile without errors or warnings
 
-__**PART**___ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+__**YES**___ 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
 __**YES**___ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
