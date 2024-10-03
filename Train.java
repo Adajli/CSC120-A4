@@ -22,7 +22,7 @@ public class Train {
         }
     }
 
-    //Accessor for engine
+    /**Accessor for engine**/
     public Engine getEngine(){
         return e;
     }

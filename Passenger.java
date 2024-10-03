@@ -1,3 +1,4 @@
+/* Passenger function shows actions and attributes of the passenger. */
 public class Passenger {
     
     private String name;
@@ -5,11 +6,11 @@ public class Passenger {
     public Passenger(String name) {
         this.name = name;
     }
-    //Method gets information about passenger.
+    /** Method gets information about passenger.*/
     public String getPassenger(){
         return this.name;
     }
-    //boardCar function
+    /** boardCar function boards car*/
     public void boardCar(Car c){
         if(c.addPassenger(this)){
             System.out.println(getPassenger()+ " already boarded.");
