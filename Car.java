@@ -9,21 +9,21 @@ public class Car {
         this.passengersOnboard = new ArrayList<Passenger>(maxCapacity);
         this.maxCapacity = maxCapacity;
     }
-    //Method acesses maximum capacity of the car
+    /*Method acesses maximum capacity of the car */
     public int getCapacity(){
         return this.maxCapacity;
     }
 
-     //Method acesses array of passengers onboard
+     /**Method acesses array of passengers onboard */
      public ArrayList<Passenger>  getPassengersOnboard(){
         return this.passengersOnboard;
     }
-    //Method returns seats remaining in the car
+    /*Method returns seats remaining in the car*/
     public int seatsRemaining(){
         return maxCapacity-passengersOnboard.size();
     }
 
-    //Method to add a passenger
+    /*Method to add a passenger */
     public boolean addPassenger(Passenger p){
         if(passengersOnboard.size()<maxCapacity && !p.equals(null)){
             passengersOnboard.add(p);
@@ -33,7 +33,7 @@ public class Car {
         }
     }
 
-    //Method to remove the passenger 
+    /*Method to remove the passenger */
     public boolean removePassenger(Passenger p){
         boolean removed = false;
         if(passengersOnboard.size()>0){
@@ -48,7 +48,7 @@ public class Car {
         }
         return removed;
     }
-    //Manifest function
+    /**Manifest function prints out information */
     public void printManifest(){
         if(passengersOnboard.size()==0){
             System.out.println("This car is empty.");
@@ -59,7 +59,7 @@ public class Car {
         }
     }
     
-    //Main function for testing
+    /*Main function used for testing*/
     public static void main(String[] args) {
         Car c = new Car(10);
         Passenger p = new Passenger("Melissa");

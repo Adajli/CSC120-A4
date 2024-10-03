@@ -28,7 +28,7 @@ public class Passenger {
     }
     
     
-    //Main function for testing
+    /*Main function used for testing*/
     public static void main(String[] args) {
         Passenger p = new Passenger("Melissa");
         System.out.println(p.getPassenger());

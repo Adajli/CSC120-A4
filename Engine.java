@@ -40,7 +40,7 @@ public class Engine {
     
    }
 
-   //main function
+   /*Main function used for testing*/
    public static void main(String[] args) {
     Engine myEngine = new Engine(FuelType.ELECTRIC, 100.0);
     myEngine.getcurrentFuelLevel();
