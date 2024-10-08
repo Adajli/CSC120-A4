@@ -17,13 +17,13 @@ public class Car {
     }
 
      /**Method acesses array of passengers onboard
-      * @return ArrayList of passengers
+      * @return ArrayList<Passenger>
       */
      public ArrayList<Passenger>  getPassengersOnboard(){
         return this.passengersOnboard;
     }
     /** Method returns seats remaining in the car
-     * @ return int
+     * @return seats left
     */
     public int seatsRemaining(){
         return maxCapacity-passengersOnboard.size();
