@@ -19,8 +19,8 @@ public class Passenger {
         }
     }
     /** Function lets passenger get off the car.*/
-    public void getOff(Car c){
-        if(c.addPassenger(this)){
+    public void getOffCar(Car c){
+        if(c.removePassenger(this)){
             System.out.println( getPassenger()+ " is off the train.");
         }else{
             System.out.println( getPassenger() +" is not on board.");
