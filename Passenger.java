@@ -18,7 +18,10 @@ public class Passenger {
             System.out.println("The car is already full.");
         }
     }
-    /** Function lets passenger get off the car.*/
+    /** Function lets passenger get off the car.
+     * @params c
+     * @return void
+    */
     public void getOffCar(Car c){
         if(c.removePassenger(this)){
             System.out.println( getPassenger()+ " is off the train.");

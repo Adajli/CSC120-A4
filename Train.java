@@ -6,8 +6,8 @@ public class Train {
     private double fuelCapacity;
     private int nCars;
     private int passengerCapacity;
-    private ArrayList<Car> cars;
-    private Engine e;
+    private final ArrayList<Car> cars;
+    private final Engine e;
     //Train constructor
     public Train(FuelType fuelType, double fuelCapacity, int nCars, int passengerCapacity){
         this.fuelType = fuelType;

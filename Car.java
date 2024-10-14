@@ -4,7 +4,9 @@ public class Car {
     private ArrayList<Passenger> passengersOnboard;
     private int maxCapacity;
 
-    //Constructor
+    /**Constructor
+     * @param maxCapcity
+    */
     public Car(int maxCapacity){
         this.passengersOnboard = new ArrayList<Passenger>(maxCapacity);
         this.maxCapacity = maxCapacity;
@@ -48,7 +50,7 @@ public class Car {
     */
     public boolean removePassenger(Passenger p){
         boolean removed = false;
-        if(passengersOnboard.size()>0){
+        if(passengersOnboard.contains(p)){
             for(int i = 0; i<passengersOnboard.size(); i++){
                 if(passengersOnboard.get(i).equals(p)){
                     passengersOnboard.remove(p);
