@@ -6,15 +6,15 @@ public class Train {
     private double fuelCapacity;
     private int nCars;
     private int passengerCapacity;
-    private final ArrayList<Car> cars;
+    private ArrayList<Car> cars;
     private final Engine e;
+    {
+        e = new Engine(fuelType,fuelCapacity);
+    }
     //Train constructor
-    public Train(FuelType fuelType, double fuelCapacity, int nCars, int passengerCapacity){
-        this.fuelType = fuelType;
-        this.fuelCapacity = fuelCapacity;
+    public Train(int nCars, int passengerCapacity){
         this.nCars = nCars;
         this.passengerCapacity = passengerCapacity;
-        e = new Engine(fuelType, fuelCapacity);
         this.cars = new ArrayList<Car>();
         for(int i = 0; i<nCars;i++){
             Car c = new Car(passengerCapacity);
@@ -77,7 +77,7 @@ public class Train {
         }
     }
     public static void main(String[] args) {
-        Train t = new Train(FuelType.ELECTRIC,100.0,3,10 );
+        Train t = new Train(3,10 );
         Passenger p = new Passenger("Melissa");
         Passenger p2 = new Passenger("Jordan");
         t.getCar(0).addPassenger(p);
