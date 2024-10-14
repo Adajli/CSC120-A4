@@ -4,7 +4,9 @@ public class Engine {
    private double currentFuelLevel;
    private double maxFuelLevel;
 
-   /**Constructor */
+   /**Constructor 
+    * @params f, maxFuelLevel
+   */
    public Engine(FuelType f, double maxFuelLevel){
     this.f = f;
     this.maxFuelLevel = maxFuelLevel; 
@@ -24,7 +26,7 @@ public class Engine {
     return this.currentFuelLevel;
    }
    /**Fuel type accessor
-    * @return f
+    * @return FuelType
    */
    public FuelType getFuelType(){
     return this.f;
@@ -35,6 +37,7 @@ public class Engine {
     // System.out.println(currentFuelLevel);
    }
    /**Go function gets engine moving.
+    * @return boolean
     */
    public boolean go(){
     if(currentFuelLevel>0.0){
@@ -47,7 +50,9 @@ public class Engine {
     
    }
 
-   /**Main function used for testing*/
+   /**Main function used for testing
+    * @param args
+   */
    public static void main(String[] args) {
     Engine myEngine = new Engine(FuelType.ELECTRIC, 100.0);
     myEngine.getcurrentFuelLevel();
