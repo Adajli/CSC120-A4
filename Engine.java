@@ -5,7 +5,8 @@ public class Engine {
    private double maxFuelLevel;
 
    /**Constructor 
-    * @params f, maxFuelLevel
+    * @param f
+    * @param maxFuelLevel
    */
    public Engine(FuelType f, double maxFuelLevel){
     this.f = f;
@@ -31,7 +32,9 @@ public class Engine {
    public FuelType getFuelType(){
     return this.f;
    }
-   /**Refuel method to refuel engine */
+   /**Refuel method to refuel engine
+    * @return void
+    */
    public void refuel(){
     this.currentFuelLevel = this.maxFuelLevel;
     // System.out.println(currentFuelLevel);

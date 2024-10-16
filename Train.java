@@ -11,7 +11,10 @@ public class Train {
     {
         e = new Engine(fuelType,fuelCapacity);
     }
-    //Train constructor
+    /**rain constructor
+     * @param nCars
+     * @param passengerCapacity
+    */
     public Train(int nCars, int passengerCapacity){
         this.nCars = nCars;
         this.passengerCapacity = passengerCapacity;
