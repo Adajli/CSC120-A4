@@ -40,7 +40,7 @@ public class Car {
             passengersOnboard.add(p);
             return true;
         }else{
-            return false;
+           throw new RuntimeException("Can't add the passenger to the car of the train.");
         }
     }
 
