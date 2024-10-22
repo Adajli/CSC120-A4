@@ -36,7 +36,7 @@ public class Car {
      * @return boolean
      */
     public boolean addPassenger(Passenger p){
-        if(passengersOnboard.size()<maxCapacity && !p.equals(null) && !p.equals(p)){
+        if(passengersOnboard.size()<maxCapacity && !p.equals(null) || !p.equals(p)){
             passengersOnboard.add(p);
             return true;
         }else{
