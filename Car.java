@@ -63,6 +63,7 @@ public class Car {
         return removed;
     }
     /** Manifest function prints out information 
+     * @return void
     */
     public void printManifest(){
         if(passengersOnboard.size()==0){
@@ -74,7 +75,7 @@ public class Car {
         }
     }
     
-    /** Main function used for testing*/
+    // Main function used for testing
     public static void main(String[] args) {
         Car c = new Car(10);
         Passenger p = new Passenger("Melissa");
