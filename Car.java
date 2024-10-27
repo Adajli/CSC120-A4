@@ -66,12 +66,8 @@ public class Car {
     public boolean removePassenger(Passenger p) {
         boolean removed = false;
         if (passengersOnboard.contains(p)) {
-            for (int i = 0; i < passengersOnboard.size(); i++) {
-                if (passengersOnboard.get(i).equals(p)) {
-                    passengersOnboard.remove(p);
-                    removed = true;
-                }
-            }
+            passengersOnboard.remove(p);
+            removed = true;
         } else {
             throw new RuntimeException("Can't remove passenger from train.");
         }
