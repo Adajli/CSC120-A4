@@ -13,7 +13,7 @@ public class Train {
     }
 
     /**
-     * rain constructor
+     * Train constructor
      * 
      * @param nCars
      * @param passengerCapacity
@@ -46,17 +46,29 @@ public class Train {
         return fuelType;
     }
 
-    // Accessor to get fuel capacity
+    /**
+     * Fuel Capacity accessor
+     * 
+     * @return fuelCapacity
+     */
     public double getFuelCapacity() {
         return fuelCapacity;
     }
 
-    // Accessor to get passenger capacity
+    /**
+     * Passenger capacity accessor
+     * 
+     * @return passengerCapacity
+     */
     public double getPassengerCapacity() {
         return passengerCapacity;
     }
 
-    // Accessor to get the number of cars
+    /**
+     * Number of cars accessor
+     * 
+     * @return
+     */
     public int getNumberOfCars() {
         return nCars;
     }
@@ -87,12 +99,19 @@ public class Train {
         return seatsRemaining;
     }
 
-    // Accesor to get a car of the train
+    /**
+     * Function to get car
+     * 
+     * @param i
+     * @return cars.get(i)
+     */
     public Car getCar(int i) {
         return cars.get(i);
     }
 
-    // Manifest function
+    /**
+     * Function to print manifest
+     */
     public void printManifest() {
         for (int i = 0; i < nCars; i++) {
             System.out.println("Car " + (i + 1));
