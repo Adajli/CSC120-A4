@@ -45,7 +45,7 @@ public class Car {
     /**
      * Method to add a passenger
      * 
-     * @param passenger
+     * @param p
      * @return boolean
      */
     public boolean addPassenger(Passenger p) {
@@ -60,7 +60,7 @@ public class Car {
     /**
      * Method to remove the passenger
      * 
-     * @param passenger
+     * @param p
      * @return boolean
      */
     public boolean removePassenger(Passenger p) {
