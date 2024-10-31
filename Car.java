@@ -6,9 +6,9 @@ public class Car {
     private int maxCapacity;
 
     /**
-     * Constructor
+     * Constructor for Car
      * 
-     * @param maxCapcity
+     * @param maxCapacity
      */
     public Car(int maxCapacity) {
         this.passengersOnboard = new ArrayList<Passenger>(maxCapacity);
@@ -18,7 +18,7 @@ public class Car {
     /**
      * Method acesses maximum capacity of the car
      * 
-     * @return integer maximum capacity
+     * @return maxCapacity
      */
     public int getCapacity() {
         return this.maxCapacity;
@@ -27,7 +27,7 @@ public class Car {
     /**
      * Method acesses array of passengers onboard
      * 
-     * @return ArrayList<Passenger>
+     * @return passengersOnboard
      */
     public ArrayList<Passenger> getPassengersOnboard() {
         return this.passengersOnboard;
@@ -46,22 +46,24 @@ public class Car {
      * Method to add a passenger
      * 
      * @param p
-     * @return boolean
+     * @return added
      */
     public boolean addPassenger(Passenger p) {
+        boolean added = false;
         if (passengersOnboard.size() < maxCapacity && !p.equals(null) || !p.equals(p)) {
             passengersOnboard.add(p);
-            return true;
+            added = true;
         } else {
             throw new RuntimeException("Can't add the passenger to the car of the train.");
         }
+        return added;
     }
 
     /**
      * Method to remove the passenger
      * 
      * @param p
-     * @return boolean
+     * @return removed
      */
     public boolean removePassenger(Passenger p) {
         boolean removed = false;
